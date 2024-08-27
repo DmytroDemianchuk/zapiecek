@@ -1,0 +1,240 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: #cda45e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: "Playfair Display", serif;
+}
+
+/* Hero Section */
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/hero-bg.jpg) top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  background-attachment: fixed;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#hero .container {
+  padding-top: 110px;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: calc(2rem + 3vw);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+#hero h1 span {
+  color: #cda45e;
+}
+
+#hero h2 {
+  color: #eee;
+  margin: 10px 0 20px;
+  font-size: calc(1.5rem + 1vw);
+  text-align: center;
+}
+
+#hero .btns {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#hero .btn-menu, #hero .btn-book {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: white;
+  border: 2px solid #cda45e;
+}
+
+#hero .btn-book {
+  margin-left: 15px;
+}
+
+/* AOS (Animate On Scroll) */
+[data-aos] {
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+[data-aos^=zoom][data-aos^=zoom] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos^=zoom][data-aos^=zoom].aos-animate {
+  opacity: 1;
+  transform: translateZ(0) scale(1);
+}
+
+[data-aos][data-aos][data-aos-delay="100"] {
+  transition-delay: .1s;
+}
+
+[data-aos][data-aos][data-aos-easing="ease-in-out"] {
+  transition-timing-function: ease-in-out;
+}
+
+[data-aos][data-aos][data-aos-duration="1000"] {
+  transition-duration: 1s;
+}
+
+[data-aos=zoom-in] {
+  transform: scale(.6);
+}
+
+/* Container Sizes */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, .75rem);
+  padding-left: var(--bs-gutter-x, .75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-md, .container-sm {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+  }
+  
+  .text-lg-start {
+    text-align: left !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+  }
+}
+
+/* Row and Columns */
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+}
+
+.col-lg-8 {
+  flex: 0 0 auto;
+  width: 66.6666666667%;
+}
+
+.col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+}
+
+/* Animations */
+[data-aos] {
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+[data-aos=zoom-in] {
+  transform: scale(.6);
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-lg-start {
+  text-align: left !important;
+}
+
+/* User agent stylesheet adjustments */
+:root {
+  --swiper-navigation-size: 44px;
+  --swiper-theme-color: #007aff;
+}
+

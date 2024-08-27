@@ -1,0 +1,122 @@
+/* Container and Section Title */
+.book-a-table {
+  padding: 60px 0;
+  background-color: #0c0b09;
+  color: #fff;
+}
+
+.book-a-table .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.book-a-table .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #cda45e;
+  text-transform: uppercase;
+}
+
+.book-a-table .section-title p {
+  font-size: 20px;
+  color: #e0e0e0;
+}
+
+/* Form Styles */
+.book-a-table .php-email-form {
+  background: #2a2925;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.book-a-table .php-email-form .form-group {
+  margin-bottom: 15px;
+}
+
+.book-a-table .php-email-form input,
+.book-a-table .php-email-form textarea {
+  border: 1px solid #444;
+  background: #1f1e1a;
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.book-a-table .php-email-form input::placeholder,
+.book-a-table .php-email-form textarea::placeholder {
+  color: #b5b5b5;
+}
+
+.book-a-table .php-email-form input:focus,
+.book-a-table .php-email-form textarea:focus {
+  border-color: #cda45e;
+  outline: none;
+  background-color: #2c2a26;
+  box-shadow: 0 0 5px rgba(205, 164, 94, 0.5);
+}
+
+.book-a-table .php-email-form button[type="submit"] {
+  background: #cda45e;
+  border: none;
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.book-a-table .php-email-form button[type="submit"]:hover {
+  background: #d3af71;
+}
+
+/* Validation and Status Messages */
+.book-a-table .php-email-form .validate {
+  color: #ffcccc;
+  font-size: 13px;
+}
+
+.book-a-table .php-email-form .error-message,
+.book-a-table .php-email-form .sent-message,
+.book-a-table .php-email-form .loading {
+  display: none;
+}
+
+.book-a-table .php-email-form .error-message {
+  background: #ed3c0d;
+  color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.book-a-table .php-email-form .sent-message {
+  background: #18d26e;
+  color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.book-a-table .php-email-form .loading {
+  text-align: center;
+  color: #fff;
+}
+
+.book-a-table .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 3px solid #cda45e;
+  border-top-color: #fff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

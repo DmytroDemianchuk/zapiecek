@@ -1,0 +1,102 @@
+/* Основні стилі для секції Why Us */
+.why-us {
+    padding: 80px 0;
+    background: #0c0b09;
+    color: #fff;
+}
+
+/* Заголовок секції */
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #cda45e;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-title p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    line-height: 1.4;
+}
+
+/* Стилі для рядів і колонок */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Колонки */
+.col-lg-4 {
+    flex: 1;
+    max-width: 100%;
+    padding: 15px;
+}
+
+/* Стилі для блоків */
+.box {
+    background: #272523;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.box .icon {
+    font-size: 50px;
+    color: #cda45e;
+    margin-bottom: 20px;
+}
+
+.box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.box p {
+    color: #bbbbbb;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Анімація при скролінгу */
+.aos-init {
+    opacity: 0;
+}
+
+.aos-animate {
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+}
+
+/* Медіазапити */
+@media (max-width: 991px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+    }
+}

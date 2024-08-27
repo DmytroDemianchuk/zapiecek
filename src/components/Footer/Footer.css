@@ -1,0 +1,171 @@
+/* Загальний стиль футера */
+#footer {
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 14px;
+  padding: 60px 0;
+}
+
+#footer .footer-top {
+  background: #121212;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #444;
+  padding: 30px 0; /* Зменшив padding для компактнішого вигляду */
+}
+
+/* Контейнер футера */
+#footer .container {
+  display: flex;
+  flex-wrap: wrap; /* Дозволяє перенесення на новий рядок при необхідності */
+}
+
+/* Рядок футера */
+#footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Розміщення елементів по горизонталі з відстанями між ними */
+}
+
+/* Розмір колонок */
+#footer .col-lg-3, 
+#footer .col-lg-2, 
+#footer .col-lg-4 {
+  flex: 1;
+  min-width: 200px; /* Мінімальна ширина для кожної колонки */
+  margin: 10px; /* Відступи між колонками */
+}
+
+/* Інформація футера */
+#footer .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-info h3 {
+  font-size: 28px;
+  margin: 0 0 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #f9f9f9;
+}
+
+#footer .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: #ddd;
+}
+
+/* Посилання на соціальні мережі */
+#footer .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 10px;
+  margin-right: 8px;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  transition: background 0.3s, color 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #cda45e;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Заголовки */
+#footer h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f9f9f9;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+/* Посилання футера */
+#footer .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-links ul i {
+  padding-right: 10px;
+  color: #cda45e;
+  font-size: 20px;
+}
+
+#footer .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-links ul a {
+  color: #ddd;
+  transition: color 0.3s;
+  display: inline-block;
+}
+
+#footer .footer-links ul a:hover {
+  color: #cda45e;
+}
+
+/* Форма підписки на розсилку */
+#footer .footer-newsletter form {
+  background: #333;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 10px;
+  width: calc(100% - 120px);
+  background: #444;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+  border: 0;
+  background: #cda45e;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+  background: #d3af71;
+}
+
+/* Авторські права та кредити */
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 14px;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #ddd;
+}

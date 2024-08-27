@@ -1,0 +1,157 @@
+/* General Styling for Section */
+.gallery {
+  padding: 60px 0;
+  background-color: #1a1814;
+}
+
+/* Section Title Styling */
+.section-title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.section-title p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #cda45e;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-right: 3px solid #454035;
+  border-bottom: 3px solid #454035;
+  width: 100%;
+  height: 250px; /* Fixed height for all containers */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image Styling */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image covers container, cropping if necessary */
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+/* Hover Effects */
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Lightbox Styling */
+.gallery-lightbox {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Responsive Grid Layout */
+.row {
+  margin: 0 -15px;
+}
+
+.col-lg-3, .col-md-4, .col-sm-6 {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.col-lg-3, .col-md-4, .col-sm-6 {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+/* Remove gutter on rows */
+.g-0, .gy-0 {
+  --bs-gutter-y: 0;
+}
+
+.g-0, .gx-0 {
+  --bs-gutter-x: 0;
+}
+
+/* Adjust row spacing */
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+/* Link Styling */
+a {
+  color: #cda45e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Additional Styling */
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+/* Transition for all images */
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
